@@ -61,7 +61,7 @@
 
   <ItemGroup Label="Project Embedded Resources">
     <EmbeddedResource Include="$(NetworkHandshakePublicKey)" />
-    <EmbeddedResource Include="$(IntersectRepoPath)\assets\intersect-logo-qu.bmp">
+    <EmbeddedResource Include="$(IntersectRepoPath)\assets\Icon.bmp">
       <LogicalName>Icon.bmp</LogicalName>
     </EmbeddedResource>
     <EmbeddedResource Include="Resources\MonoGame.Framework.dll.config" />
