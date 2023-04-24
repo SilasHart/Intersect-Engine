@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
@@ -8,20 +8,29 @@
 
   <PropertyGroup>
     <PackageId>AscensionGameDev.Intersect.Client</PackageId>
-    <Description>Game Client - Part of the Intersect 2D Game Creation Suite</Description>
+    <Description>Game Client</Description>
     <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
     <RootNamespace>Intersect.Client</RootNamespace>
-    <AssemblyName>Intersect Client</AssemblyName>
+    <AssemblyName>Lands of Legend Client</AssemblyName>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <ApplicationManifest>app.manifest</ApplicationManifest>
     <FileAlignment>512</FileAlignment>
     <DebugType>embedded</DebugType>
+    <ApplicationIcon>Icon.ico</ApplicationIcon>
+    <Authors>Lands of Legend Development</Authors>
+    <Product>Lands of Legend</Product>
+    <Copyright>Copyright © Lands of Legend Dev 2022</Copyright>
+    <PackageIcon>Icon.png</PackageIcon>
   </PropertyGroup>
 
   <ItemGroup>
     <AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleTo">
       <_Parameter1>Intersect.Tests.Client</_Parameter1>
     </AssemblyAttribute>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Icon.ico" />
   </ItemGroup>
 
   <ItemGroup>
@@ -58,6 +67,10 @@
     <EmbeddedResource Include="Resources\MonoGame.Framework.dll.config" />
     <EmbeddedResource Include="Resources\openal32.dll" />
     <EmbeddedResource Include="Resources\Shaders\radialgradient.xnb" />
+    <None Include="..\assets\Icon.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
     <None Include="app.manifest" />
     <None Include="FodyWeavers.xml">
       <SubType>Designer</SubType>

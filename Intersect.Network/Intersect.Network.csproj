@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <PropertyGroup>
-    <Description>Common Networking Library - Part of the Intersect 2D Game Creation Suite</Description>
+    <Description>Common Networking Library</Description>
     <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
     <RootNamespace>Intersect.Network</RootNamespace>
     <AssemblyName>Intersect.Network</AssemblyName>
@@ -18,6 +18,17 @@
     <AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleTo">
       <_Parameter1>Intersect.Tests.Network</_Parameter1>
     </AssemblyAttribute>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Icon.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\assets\Icon.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>
 
   <ItemGroup>
@@ -39,6 +50,11 @@
     <IntersectNetworkKeySize Condition="'$(IntersectNetworkKeySize)' != ''">4096</IntersectNetworkKeySize>
     <IntersectNetworkKeysGenerateEachBuild Condition="'$(IntersectNetworkKeysGenerateEachBuild)' != ''">true</IntersectNetworkKeysGenerateEachBuild>
     <IntersectNetworkKeysOutputDirectory Condition="'$(IntersectNetworkKeysOutputDirectory)' == ''">$(MSBuildProjectDirectory)\bin\$(Configuration)\keys</IntersectNetworkKeysOutputDirectory>
+    <ApplicationIcon>Icon.ico</ApplicationIcon>
+    <Authors>Lands of Legend Development</Authors>
+    <Product>Lands of Legend</Product>
+    <Copyright>Copyright © Lands of Legend Dev 2022</Copyright>
+    <PackageIcon>Icon.png</PackageIcon>
   </PropertyGroup>
 
   <UsingTask TaskName="Intersect.Building.KeyGenerationTask" TaskFactory="TaskHostFactory" AssemblyFile="$(PkgAscensionGameDev_Intersect_Building)\lib\netstandard2.0\Intersect.Building.dll" />
