@@ -69,7 +69,7 @@ namespace Intersect.Editor.Forms
         {
             Text = Strings.Login.title;
             lblVersion.Text = Strings.Login.version.ToString(Application.ProductVersion);
-            lblGettingStarted.Text = Strings.Login.gettingstarted;
+            //lblGettingStarted.Text = Strings.Login.gettingstarted;
             lblUsername.Text = Strings.Login.username;
             lblPassword.Text = Strings.Login.password;
             chkRemember.Text = Strings.Login.rememberme;

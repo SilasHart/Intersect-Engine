@@ -212,12 +212,12 @@ namespace Intersect.Editor.Forms
 
         private void InitLocalizationMenuHelp()
         {
-            helpToolStripMenuItem.Text = Strings.MainForm.help;
-            postQuestionToolStripMenuItem.Text = Strings.MainForm.postquestion;
-            toolStripButtonQuestion.Text = Strings.MainForm.postquestion;
-            reportBugToolStripMenuItem.Text = Strings.MainForm.reportbug;
-            toolStripButtonBug.Text = Strings.MainForm.reportbug;
-            aboutToolStripMenuItem.Text = Strings.MainForm.about;
+            //helpToolStripMenuItem.Text = Strings.MainForm.help;
+            //postQuestionToolStripMenuItem.Text = Strings.MainForm.postquestion;
+            //toolStripButtonQuestion.Text = Strings.MainForm.postquestion;
+            //reportBugToolStripMenuItem.Text = Strings.MainForm.reportbug;
+            //toolStripButtonBug.Text = Strings.MainForm.reportbug;
+            //aboutToolStripMenuItem.Text = Strings.MainForm.about;
         }
 
         private void InitLocalizationToolstrip()

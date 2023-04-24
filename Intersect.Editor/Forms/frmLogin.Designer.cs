@@ -43,7 +43,6 @@ namespace Intersect.Editor.Forms
             this.lblVersion = new System.Windows.Forms.Label();
             this.lblUsername = new System.Windows.Forms.Label();
             this.lblPassword = new System.Windows.Forms.Label();
-            this.lblGettingStarted = new System.Windows.Forms.Label();
             this.chkRemember = new DarkUI.Controls.DarkCheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
             this.SuspendLayout();
@@ -98,11 +97,11 @@ namespace Intersect.Editor.Forms
             // 
             // picLogo
             // 
-            this.picLogo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picLogo.BackgroundImage")));
             this.picLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.picLogo.Location = new System.Drawing.Point(32, 22);
+            this.picLogo.Image = ((System.Drawing.Image)(resources.GetObject("picLogo.Image")));
+            this.picLogo.Location = new System.Drawing.Point(199, 21);
             this.picLogo.Name = "picLogo";
-            this.picLogo.Size = new System.Drawing.Size(580, 160);
+            this.picLogo.Size = new System.Drawing.Size(242, 160);
             this.picLogo.TabIndex = 4;
             this.picLogo.TabStop = false;
             // 
@@ -138,17 +137,6 @@ namespace Intersect.Editor.Forms
             this.lblPassword.TabIndex = 7;
             this.lblPassword.Text = "Password:";
             // 
-            // lblGettingStarted
-            // 
-            this.lblGettingStarted.BackColor = System.Drawing.Color.Transparent;
-            this.lblGettingStarted.ForeColor = System.Drawing.Color.White;
-            this.lblGettingStarted.Location = new System.Drawing.Point(12, 204);
-            this.lblGettingStarted.Name = "lblGettingStarted";
-            this.lblGettingStarted.Size = new System.Drawing.Size(363, 58);
-            this.lblGettingStarted.TabIndex = 8;
-            this.lblGettingStarted.Text = "Getting Started?\r\n1. Start the Intersect Server\r\n2. Open the Intersect Client & C" +
-    "reate an Account\r\n3. Login to that account here to start designing your game!";
-            // 
             // chkRemember
             // 
             this.chkRemember.AutoSize = true;
@@ -166,7 +154,6 @@ namespace Intersect.Editor.Forms
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
             this.ClientSize = new System.Drawing.Size(628, 338);
             this.Controls.Add(this.chkRemember);
-            this.Controls.Add(this.lblGettingStarted);
             this.Controls.Add(this.lblPassword);
             this.Controls.Add(this.lblUsername);
             this.Controls.Add(this.lblVersion);
@@ -198,7 +185,6 @@ namespace Intersect.Editor.Forms
         private Label lblVersion;
         private Label lblUsername;
         private Label lblPassword;
-        private Label lblGettingStarted;
         private DarkCheckBox chkRemember;
         public Label lblStatus;
     }
