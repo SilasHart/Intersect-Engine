@@ -6,18 +6,34 @@
 
   <PropertyGroup>
     <PackageId>AscensionGameDev.Intersect.Client.Framework</PackageId>
-    <Description>Library for the public Intersect Client API</Description>
+    <Description>Library for the public Lands of Legend Client API</Description>
     <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
     <RootNamespace>Intersect.Client.Framework</RootNamespace>
     <AssemblyName>Intersect.Client.Framework</AssemblyName>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <FileAlignment>512</FileAlignment>
+    <ApplicationIcon>Icon.ico</ApplicationIcon>
+    <Authors>Lands of Legend Development</Authors>
+    <Product>Lands of Legend</Product>
+    <Copyright>Copyright © Lands of Legend Dev 2022</Copyright>
+    <PackageIcon>Icon.png</PackageIcon>
   </PropertyGroup>
 
   <ItemGroup>
     <AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleTo">
       <_Parameter1>Intersect.Tests.Client.Framework</_Parameter1>
     </AssemblyAttribute>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Icon.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\assets\Icon.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>
 
   <ItemGroup>

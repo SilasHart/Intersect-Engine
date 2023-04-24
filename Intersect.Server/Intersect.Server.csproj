@@ -8,14 +8,19 @@
 
   <PropertyGroup>
     <PackageId>AscensionGameDev.Intersect.Server</PackageId>
-    <Description>Library for the public Intersect Server API</Description>
+    <Description>Library for the public Lands of Legend Server API</Description>
     <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
     <RootNamespace>Intersect.Server</RootNamespace>
-    <AssemblyName>Intersect Server</AssemblyName>
+    <AssemblyName>Lands of Legend Server</AssemblyName>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <FileAlignment>512</FileAlignment>
     <DebugType>embedded</DebugType>
     <GenerateRuntimeConfigurationFiles>True</GenerateRuntimeConfigurationFiles>
+    <ApplicationIcon>Icon.ico</ApplicationIcon>
+    <Authors>Lands of Legend Development</Authors>
+    <Product>Lands of Legend</Product>
+    <Copyright>Copyright ©Lands of Legend Dev 2022</Copyright>
+    <PackageIcon>Icon.png</PackageIcon>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration.ToLower())' == 'nofody'">
@@ -31,6 +36,10 @@
     <AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleTo">
       <_Parameter1>Intersect.Tests.Server</_Parameter1>
     </AssemblyAttribute>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Icon.ico" />
   </ItemGroup>
 
   <ItemGroup>
@@ -67,6 +76,10 @@
     <EmbeddedResource Include="Resources\notifications\PasswordReset.html" />
     <EmbeddedResource Include="Resources\e_sqlite3x64.dll" />
     <EmbeddedResource Include="Resources\e_sqlite3x86.dll" />
+    <None Include="..\assets\Icon.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
     <None Include="FodyWeavers.xml">
       <SubType>Designer</SubType>
     </None>

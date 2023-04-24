@@ -8,20 +8,29 @@
 
   <PropertyGroup>
     <PackageId>AscensionGameDev.Intersect.Editor</PackageId>
-    <Description>Game Editor - Part of the Intersect 2D Game Creation Suite</Description>
+    <Description>Game Editor</Description>
     <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
     <RootNamespace>Intersect.Editor</RootNamespace>
-    <AssemblyName>Intersect Editor</AssemblyName>
+    <AssemblyName>Lands of Legend Editor</AssemblyName>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <FileAlignment>512</FileAlignment>
     <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
     <DebugType>embedded</DebugType>
+    <ApplicationIcon>Icon.ico</ApplicationIcon>
+    <Authors>Lands of Legend Development</Authors>
+    <Product>Lands of Legend</Product>
+    <Copyright>Copyright © Lands of Legend Dev 2022</Copyright>
+    <PackageIcon>Icon.png</PackageIcon>
   </PropertyGroup>
 
   <ItemGroup>
     <AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleTo">
       <_Parameter1>Intersect.Tests.Editor</_Parameter1>
     </AssemblyAttribute>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Icon.ico" />
   </ItemGroup>
 
   <ItemGroup>
@@ -54,6 +63,10 @@
     <EmbeddedResource Include="Resources\sqlite3x64.dll" />
     <EmbeddedResource Include="Resources\sqlite3x86.dll" />
     <EmbeddedResource Include="Resources\Shaders\radialgradient_editor.xnb" />
+    <None Include="..\assets\Icon.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
     <None Include="Resources\layer_sel.png" />
     <None Include="Resources\layer_face.png" />
     <None Include="Resources\layer_face_sel.png" />
@@ -411,8 +424,7 @@
     <Compile Update="Forms\Editors\Events\Event Commands\EventCommand_WaitForRouteCompletion.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile
-      Update="Forms\Editors\Events\Event Commands\EventCommand_WaitForRouteCompletion.Designer.cs">
+    <Compile Update="Forms\Editors\Events\Event Commands\EventCommand_WaitForRouteCompletion.Designer.cs">
       <DependentUpon>EventCommand_WaitForRouteCompletion.cs</DependentUpon>
     </Compile>
     <Compile Update="Forms\Editors\Events\Event Commands\EventCommand_Warp.cs">
@@ -430,8 +442,7 @@
     <Compile Update="Forms\Editors\Events\Event Commands\Event_MoveRouteAnimationSelector.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile
-      Update="Forms\Editors\Events\Event Commands\Event_MoveRouteAnimationSelector.Designer.cs">
+    <Compile Update="Forms\Editors\Events\Event Commands\Event_MoveRouteAnimationSelector.Designer.cs">
       <DependentUpon>Event_MoveRouteAnimationSelector.cs</DependentUpon>
     </Compile>
     <Compile Update="Forms\Editors\Events\Event Commands\Event_MoveRouteDesigner.cs">

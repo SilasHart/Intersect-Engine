@@ -6,18 +6,34 @@
 
   <PropertyGroup>
     <PackageId>AscensionGameDev.Intersect.Core</PackageId>
-    <Description>Core Library - Part of the Intersect 2D Game Creation Suite</Description>
+    <Description>Core Library </Description>
     <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
     <RootNamespace>Intersect</RootNamespace>
     <AssemblyName>Intersect Core</AssemblyName>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <FileAlignment>512</FileAlignment>
+    <ApplicationIcon>Icon.ico</ApplicationIcon>
+    <Authors>Lands of Legend Development</Authors>
+    <Product>Lands of Legend</Product>
+    <Copyright>Copyright © Lands of Legend Dev 2022</Copyright>
+    <PackageIcon>Icon.png</PackageIcon>
   </PropertyGroup>
 
   <ItemGroup>
     <AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleTo">
       <_Parameter1>Intersect.Tests</_Parameter1>
     </AssemblyAttribute>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Icon.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\assets\Icon.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>
 
   <ItemGroup>
