@@ -57,11 +57,11 @@ namespace Intersect.Editor.Forms
             // 
             // picLogo
             // 
-            this.picLogo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picLogo.BackgroundImage")));
             this.picLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.picLogo.Location = new System.Drawing.Point(32, 22);
+            this.picLogo.Image = ((System.Drawing.Image)(resources.GetObject("picLogo.Image")));
+            this.picLogo.Location = new System.Drawing.Point(190, 12);
             this.picLogo.Name = "picLogo";
-            this.picLogo.Size = new System.Drawing.Size(580, 160);
+            this.picLogo.Size = new System.Drawing.Size(243, 160);
             this.picLogo.TabIndex = 4;
             this.picLogo.TabStop = false;
             // 
